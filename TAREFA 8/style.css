@@ -1,0 +1,14 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#img8 {
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0;
+}
