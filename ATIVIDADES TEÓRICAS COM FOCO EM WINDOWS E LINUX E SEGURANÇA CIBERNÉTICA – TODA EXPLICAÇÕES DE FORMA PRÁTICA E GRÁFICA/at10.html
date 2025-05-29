@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Configuração do Sistema: Pontos Críticos</title>
+</head>
+<body>
+    <h1>Configuração do Sistema: Pontos Críticos</h1>
+
+    <ol>
+        <li>Gerenciamento de usuários e permissões</li>
+        <ul>
+            <li><strong>O que faz:</strong> Controla quem pode acessar o sistema e o que cada usuário pode fazer.</li>
+            <li><strong>Por que é importante:</strong> Garante segurança, evita acessos indevidos e protege arquivos importantes.</li>
+            <li><strong>Exemplos:</strong>
+            <ul>
+                <li><strong>Windows:</strong> Painel de controle &gt; Contas de usuário / net user</li>
+                <li><strong>Linux:</strong> Comandos adduser, chmod, chown</li>
+            </ul>
+            </li>
+        </ul>
+
+        <li>Inicialização do sistema (boot) e serviços</li>
+        <ul>
+            <li><strong>O que faz:</strong> Define quais programas e serviços iniciam junto com o sistema.</li>
+            <li><strong>Por que é importante:</strong> Afeta o tempo de boot e desempenho geral. Permite remover serviços desnecessários.</li>
+            <li><strong>Exemplos:</strong>
+            <ul>
+                <li><strong>Windows:</strong> msconfig, Task Manager &gt; Inicializar</li>
+                <li><strong>Linux:</strong> systemctl, /etc/systemd/</li>
+            </ul>
+            </li>
+        </ul>
+
+        <li>Firewall e configurações de rede</li>
+        <ul>
+            <li><strong>O que faz:</strong> Controla o tráfego de entrada e saída da rede, protegendo contra acessos maliciosos.</li>
+            <li><strong>Por que é importante:</strong> Essencial para a segurança do sistema.</li>
+            <li><strong>Exemplos:</strong>
+            <ul>
+                <li><strong>Windows:</strong> Firewall do Windows / Defender Firewall</li>
+                <li><strong>Linux:</strong> ufw, iptables, firewalld</li>
+            </ul>
+            </li>
+        </ul>
+
+        <li>Atualizações e patches do sistema</li>
+        <ul>
+            <li><strong>O que faz:</strong> Garante que o sistema e os programas estejam com as últimas correções de segurança e melhorias.</li>
+            <li><strong>Por que é importante:</strong> Corrige vulnerabilidades que podem ser exploradas.</li>
+            <li><strong>Exemplos:</strong>
+            <ul>
+                <li><strong>Windows:</strong> Windows Update</li>
+                <li><strong>Linux:</strong> apt, yum, dnf, pacman</li>
+            </ul>
+            </li>
+        </ul>
+
+        <li>Gerenciamento de desempenho e recursos</li>
+        <ul>
+            <li><strong>O que faz:</strong> Monitora e ajusta o uso de CPU, memória, disco e rede.</li>
+            <li><strong>Por que é importante:</strong> Otimiza o sistema, evita travamentos e melhora a usabilidade.</li>
+            <li><strong>Exemplos:</strong>
+            <ul>
+                <li><strong>Windows:</strong> Gerenciador de Tarefas, Monitor de Desempenho</li>
+                <li><strong>Linux:</strong> top, htop, iotop, free, vmstat</li>
+            </ul>
+            </li>
+        </ul>
+    </ol>
+</body>
+</html>

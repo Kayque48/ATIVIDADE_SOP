@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>O Processo de Boot: Do Power-On ao Desktop</title>
+</head>
+<body>
+    <h1>O Processo de Boot: Do Power-On ao Desktop</h1>
+
+    <h2>Etapas do Processo de Inicialização</h2>
+    <ol>
+        <li>Ligamento do hardware (power on)</li>
+        <p>Quando você aperta o botão de ligar, a energia chega à placa-mãe e aos outros componentes.</p>
+
+        <li>POST (Power-On Self Test)</li>
+        <p>O sistema faz uma verificação básica do hardware (memória RAM, teclado, processador etc.). Se algo estiver errado, ele pode emitir bipes ou mostrar mensagens de erro.</p>
+
+        <li>BIOS/UEFI</li>
+        <p>A BIOS ou UEFI é o firmware da placa-mãe. Ela detecta os dispositivos e decide de onde o sistema será iniciado (HD, SSD, pendrive...).</p>
+
+        <li>Carregamento do Bootloader</li>
+        <p>O bootloader é um pequeno programa que carrega o sistema operacional.</p>
+        <ul>
+            <li>Exemplo no Linux: GRUB</li>
+            <li>Exemplo no Windows: Windows Boot Manager</li>
+        </ul>
+
+        <li>Carregamento do sistema operacional</li>
+        <p>O sistema começa a ser carregado: o kernel (núcleo) é iniciado e ele cuida de reconhecer o hardware e iniciar os processos principais.</p>
+
+        <li>Inicialização dos serviços</li>
+        <p>O sistema carrega serviços de fundo (background), como rede, som, antivírus, etc.</p>
+
+        <li>Login e Interface gráfica (GUI)</li>
+        <p>Por fim, o usuário vê a tela de login e depois a interface gráfica do sistema (como a área de trabalho), pronta para uso.</p>
+    </ol>
+
+    <h2>Diferenças entre código aberto (Linux) e código fechado (Windows)</h2>
+    <ul>
+        <p>O processo geral é muito parecido, mas:</p>
+        
+        <li>No Linux, o bootloader costuma ser o GRUB, que permite escolher entre várias versões do sistema ou outros sistemas operacionais.</li>
+        <li>No Windows, o boot é mais "fechado", com menos opções visíveis para o usuário comum.</li>
+        <li>No Linux, é mais fácil personalizar ou ver o que está sendo carregado (pode-se ver os logs do sistema em detalhes).</li>
+        <li>O Windows oculta mais o processo de inicialização, deixando tudo mais automático.</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modelos de Usuários e Permissões</title>
+</head>
+<body>
+    <h1>Modelos de Usuários e Permissões</h1>
+    <h2>O que é gerenciamento de usuários e permissões?</h2>
+    <p>É o controle que o sistema operacional faz sobre quem pode acessar o quê no computador.
+    Isso ajuda a proteger arquivos, programas e o próprio sistema, evitando que usuários não autorizados façam mudanças ou vejam informações privadas.</p>
+
+    <h2>Como funciona no Windows (sistema fechado – NTFS)</h2>
+    <p>O Windows usa o sistema de arquivos NTFS, que permite definir permissões para usuários específicos ou grupos. Dá pra controlar, por exemplo:</p>
+    <ul>
+        <li>Quem pode ler, escrever ou executar um arquivo.</li>
+        <li>Quem é o dono do arquivo ou pasta.</li>
+        <li>Quais usuários têm permissões herdadas (recebem as mesmas permissões de uma pasta principal).</li>
+        <p>Essas permissões são gerenciadas por uma interface gráfica, onde o usuário clica com o botão direito no arquivo > “Propriedades” > “Segurança”.</p>
+    </ul>
+
+    <h2>Como funciona no Linux (sistema aberto – rwx)</h2>
+    <p>No Linux, as permissões são baseadas em letras e divididas em três grupos:</p>
+    <ul>
+        <li>r = read (ler)</li>
+        <li>w = write (escrever)</li>
+        <li>x = execute (executar)</li>
+        <p>No Linux, isso é feito normalmente via linha de comando, usando comandos como chmod, chown e ls -l.</p>
+    </ul>
+</body>
+</html>
